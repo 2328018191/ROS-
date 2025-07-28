@@ -1,0 +1,8 @@
+<launch>
+  <!-- 启动 turtlesim -->
+  <node pkg="turtlesim" exec="turtlesim_node" name="turtlesim" />
+
+  <!-- 启动你的节点 -->
+  <node pkg="cpp_service" exec="turtle_control" name="turtle_control" />
+  <node pkg="cpp_service" exec="turtle_client"  name="turtle_client"  />
+</launch>
